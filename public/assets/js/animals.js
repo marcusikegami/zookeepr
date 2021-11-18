@@ -38,10 +38,10 @@ const getAnimals = (formData = {}) => {
       }
       return response.json();
     })
-      .then(animalData => {
-        console.log(animalData);
-        printResults(animalData);
-      })
+    .then(animalData => {
+      console.log(animalData);
+      printResults(animalData);
+    });
 };
 
 const handleGetAnimalsSubmit = event => {
